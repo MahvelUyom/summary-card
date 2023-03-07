@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+.card-body{
+    padding: 3rem;
+    
+}
+.card{
+    display: flex;
+    box-shadow: 4px 4px 8px rgb(171, 171, 230);
+    border-radius: 2rem;
+
+}
+.result-card{
+    padding: 3rem;
+    background: rgb(66, 66, 246);
+    color: rgb(230, 228, 228);
+    border-radius: 2rem;
+
+}
+.circle{
+    width: 7rem;
+    border-radius: 50%;
+    padding: 1.8rem;
+    margin: 1.5rem;
+    background:linear-gradient(to bottom, rgb(43, 43, 252),rgb(62, 62, 236), rgb(53, 53, 198)) ;
+    border: 0;
+}
+.num{
+    font-size: 3rem;
+}
+h3{
+    color: white;
+}
+
+.summary-card{
+    padding: 3rem 3rem;
+    border-radius:0 2rem 2rem 0rem;
+}
+/* .summary-card h4{
+    text-align: left;
+} */
+.summary-card p{
+    margin-top: 1rem;
+    border-radius: 5px;
+    padding: .8rem;
+    font-weight: 600;
+}
+.red{
+    background: rgb(242, 228, 228);
+    color: red;
+}
+.yellow{
+    background: rgb(226, 226, 202);
+    color: rgb(246, 246, 3);
+}
+.green{
+    background: rgb(183, 223, 183);
+    color: green;
+}
+.blue{
+    background-color: rgb(216, 216, 234);
+    color: rgb(3, 3, 250);
+}
+p .grey{
+    color: darkgray;
+    margin-left: .2rem;
+}
+.digit{
+    margin-left: 15rem;
+    color: black;
+}
+.summary-card input{
+    padding: .6rem 5rem;
+    margin-top: 2rem;
+    border-radius: 4rem;
+    border: 0;
+    background: rgb(4, 4, 66);
+    color: white;
+}
+
+
+
+
+
+
+
+@media (max-width:665px) {
+    .card{
+      flex-direction: column;
+    }
+    .digit{
+        margin-left: 2rem;
+    }
+    .summary-card input{
+        padding: .6rem 3rem;
+    }
+    .card-body{
+        padding: 0;
+    }
+    .result-card{
+        border-radius: 0 0 2rem 2rem ;
+    }
+    .card{
+        border-radius: 0;
+    }
+}
+
+@media (min-width:664px) {
+    .card{
+        flex-direction: column;
+    }
+}
+@media (min-width:762px) {
+    .card{
+        flex-direction: initial;
+    }
+}
